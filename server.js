@@ -28,7 +28,7 @@ app.use((req, res, next) => {
 const PORT = 8000;
 mongoose.connect("mongodb+srv://bentin345:benben00@nodejscicd.w7mwclg.mongodb.net/?retryWrites=true&w=majority")
 .then(()=>{
-    console.log("database connected");
+    console.log("Database connected");
     app.listen(PORT,()=>console.log(`server is running on port ${PORT}`))
 })
 .catch((err)=>{
