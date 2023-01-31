@@ -12,6 +12,10 @@ router.get("/", async (req, res) => {
     }
 });
 
+router.get("/test", (req,res) => {
+    return res.status(200).json("Very Good!")
+})
+
 router.post("/", async (req, res) => {
     try {
         const { name, email, phone, hobbies } = req.body;
